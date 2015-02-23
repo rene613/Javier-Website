@@ -20,8 +20,8 @@
 		<!-- Slide 2 -->
 		<article class="ls-layer" style="slidedelay: 10000; slidedirection: top;">
 			<img src="img/slide-02.png" class="ls-bg">
-			<img class="ls-s4" src="img/J12.jpg" style="top: 50%; left: 67px; width:400px; height: 400px; slidedirection: left; slideoutdirection: left; durationin: 800; durationout: 800; easingin : easeOutExpo; delayin : 1200;" alt=""/>
-			<img class="ls-s4" src="img/J22.jpg" style="top: 50%; left: 549px; width:400px; height: 400px; slidedirection: right; slideoutdirection: right; durationin: 800; durationout: 800; easingin : easeOutExpo; delayin : 1200;" alt=""/>
+			<img class="ls-s4" src="img/J12.png" style="top: 50%; left: 67px; width:400px; height: 400px; slidedirection: left; slideoutdirection: left; durationin: 800; durationout: 800; easingin : easeOutExpo; delayin : 1200;" alt=""/>
+			<img class="ls-s4" src="img/J22.png" style="top: 50%; left: 549px; width:400px; height: 400px; slidedirection: right; slideoutdirection: right; durationin: 800; durationout: 800; easingin : easeOutExpo; delayin : 1200;" alt=""/>
 			<img class="ls-s4" src="img/slide-02c.png" style="top: 230px; left: 494px; slidedirection: top; durationin: 800; durationout: 800; easingin : easeOutExpo; delayin : 1200;" alt=""/>
 			<img class="ls-s2" src="img/ruler.png" style="top: 50%; left: 90px; width: 100px; height: 100px; slidedirection: left; slideoutdirection: left; durationin: 600; durationout: 1000; easingin: easeOutExpo; delayin: 1700;" alt=""/>
 			<img class="ls-s2" src="img/compass.png" style="top: 50%; left: 840px; width: 120px; height: 120px; slidedirection: right; slideoutdirection: right; durationin: 600; durationout: 1000; easingin: easeOutExpo; delayin: 1700;" alt=""/>
@@ -89,7 +89,7 @@
 			<article class="icon-box">
 				<i class="icon-user"></i>
 				<h3>Responsabilidad</h3>
-				<p></p>
+				<p>motivación y productividad a la hora de enfrentarse y realizar los trabajos.</p>
 			</article>
 		</div>
 		<!-- Icon Box End -->
@@ -108,19 +108,17 @@
 	<li class="one-third column">
 		<a href="projects" class="portfolio-item">
 			<figure>
-				<img src="img/J1.jpg" alt=""/>
+				<img src="img/Cuadroelectrico.JPG" style="height: 225px; width: 300px;" alt=""/>
 				<figcaption class="item-description">
 					<h5>Proyectos de instalaciones</h5>
-					<span>something short to say about the item. If anything at all.</span>
 				</figcaption>
 			</figure>
 		</a>
 		<a href="licenses" class="portfolio-item">
 			<figure>
-				<img src="img/J1.jpg" alt=""/>
+				<img src="img/J1.jpg" style="height: 225px; width: 300px;" alt=""/>
 				<figcaption class="item-description">
 					<h5>Licencias de actividad</h5>
-					<span>something short to say about the item. If anything at all.</span>
 				</figcaption>
 			</figure>
 		</a>
@@ -128,19 +126,17 @@
 	<li class="one-third column">
 		<a href="energy" class="portfolio-item">
 			<figure>
-				<img src="img/J1.jpg" alt=""/>
+				<img src="img/Calificacion.jpg" style="height: 225px; width: 300px;" alt=""/>
 				<figcaption class="item-description">
 					<h5>Energía</h5>
-					<span>something short to say about the item. If anything at all.</span>
 				</figcaption>
 			</figure>
 		</a>
 		<a href="environmental" class="portfolio-item">
 			<figure>
-				<img src="img/J1.jpg" alt=""/>
+				<img src="img/ET.png" style="height: 225px; width: 300px;" alt=""/>
 				<figcaption class="item-description">
 					<h5>Ingeniería ambiental</h5>
-					<span>something short to say about the item. If anything at all.</span>
 				</figcaption>
 			</figure>
 		</a>
@@ -148,98 +144,23 @@
 	<li class="one-third column">
 		<a href="civil" class="portfolio-item">
 			<figure>
-				<img src="img/J1.jpg" alt=""/>
+				<img src="img/J1.jpg" style="height: 225px; width: 300px;" alt=""/>
 				<figcaption class="item-description">
 					<h5>Ingeniería civil</h5>
-					<span>something short to say about the item. If anything at all.</span>
 				</figcaption>
 			</figure>
 		</a>
 		<a href="expert" class="portfolio-item">
 			<figure>
-				<img src="img/J1.jpg" alt=""/>
+				<img src="img/J2.jpg" style="height: 225px; width: 300px;" alt=""/>
 				<figcaption class="item-description">
 					<h5>Periciales</h5>
-					<span>something short to say about the item. If anything at all.</span>
 				</figcaption>
 			</figure>
 		</a>
 	</li>
 
 	</div>
-</div>
-<!-- 960 Container / End -->
-
-
-<!-- 960 Container -->
-<div class="container">
-
-	<!-- Recent News -->
-	<div class="eight columns">
-
-		<h3 class="margin-1">Recent News <span>/ Stuff From Our Blog</span></h3>
-
-		<div class="four columns alpha">
-			<article class="recent-blog">
-				<section class="date">
-					<span class="day">28</span>
-					<span class="month">Dec</span>
-				</section>
-				<h4><a href="blog-post.html">The Boating Life Begins With a Good Storm</a></h4>
-				<p>Integer libero lectus, porta acean pulvinar ac, facilisis non arcu. <span class="cut">Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.</span></p>
-			</article>
-		</div>
-
-		<div class="four columns omega">
-			<article class="recent-blog">
-				<section class="date">
-					<span class="day">15</span>
-					<span class="month">Dec</span>
-				</section>
-				<h4><a href="blog-post.html">Visiting Tuscany Without the Crowds</a></h4>
-				<p>Integer libero lectus, porta acean pulvinar ac, facilisis non arcu. <span class="cut">Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.</span></p>
-			</article>
-		</div>
-
-	</div>
-
-	<!-- Testimonials -->
-	<div class="eight columns">
-
-		<h3 class="margin-1">Testimonials <span>/ What Our Clients Say</span></h3>
-
-		<!-- Testimonial Rotator -->
-		<section class="flexslider testimonial-slider">
-			<ul class="slides">
-				<li class="testimonial">
-					<div class="testimonials">Integer eu libero sit amet nisl vestibulum semper. Fusce costant Proin sit amet mauris odio pellentesque iaculis posuer dapibus natoque penatibus et magnis dis parturient montes.</div>
-					<div class="testimonials-bg"></div>
-					<div class="testimonials-author">Michael, <span>Flash Developer</span></div>
-				</li>
-
-				<li class="testimonial">
-					<div class="testimonials">Posuere erat a ante venenatis dapibus posuere velit aliquet. Proin sit amet mauris odio pellentesque iaculis. Cum sociis natoque penatibus et lorem magnis dis parturient montes, nascetur ridiculus mus. Duisean lorem llis noenan coeammodo luctus.</div>
-					<div class="testimonials-bg"></div>
-					<div class="testimonials-author">John, <span>Web Developer</span></div>
-				</li>
-
-				<li class="testimonial">
-					<div class="testimonials">Cras sed odio est, sit amet porttitor elit. Vestibulum Proin sit amet mauris et odio pellentesque iaculis. Cum sociis natoque proin sit amet mauris odio pellentesque iaculis.</div>
-					<div class="testimonials-bg"></div>
-					<div class="testimonials-author">Peter, <span>Project Manager</span></div>
-				</li>
-
-				<li class="testimonial">
-					<div class="testimonials">Elementum erat vitae ante venenatis dapibus. Maecenas cursus  cursus Proin sit amet mauris et odio pellentesque iaculis.</div>
-					<div class="testimonials-bg"></div>
-					<div class="testimonials-author">Kathy, <span>Art Director</span></div>
-				</li>
-			</ul>
-		</section>
-		<!-- Testomonial Rotator / End -->
-
-	</div>
-
 </div>
 <!-- 960 Container / End -->
 

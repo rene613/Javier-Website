@@ -103,8 +103,8 @@
 		</ul>
 		<!-- Second Level / End -->
 	</li>
-	<li><a href="contact" {{baseUtils::pageCheck($page, 'contact')}} ><i class="halflings white envelope"></i> Contacto</a></li>
 	<li><a href="extra" {{baseUtils::pageCheck($page, 'extra')}} ><i class="halflings white envelope"></i> extra</a></li>
+	<li><a href="contact" {{baseUtils::pageCheck($page, 'contact')}} ><i class="halflings white envelope"></i> Contacto</a></li>
 
 </ul>
 </nav>
@@ -118,10 +118,11 @@
 	<div class="container">
 
 		<!-- About -->
-		<div class="four columns">
-			<a href="#"><img src="{{asset('img/logo.jpg')}}" style="width: 210px; height: 70px;" /></a>
-			<p>Morbi gravida imperdiet rutrum fusce mattis, lectus consequat vestibulum, duinibh fermentum ligula.</p>
-
+		<div class="eleven columns">
+			<div class="four columns">
+				<a href="#"><img src="{{asset('img/logo.jpg')}}" style="width: 210px; height: 70px;" /></a>
+				<p>Morbi gravida imperdiet rutrum fusce mattis, lectus consequat vestibulum, duinibh fermentum ligula.</p>
+			</div>
 		</div>
 
 		<!-- Contact Details -->
@@ -134,27 +135,6 @@
 			</ul>
 		</div>
 
-		<!-- Photo Stream -->
-		<div class="four columns">
-			<h4>Photo Stream</h4>
-			<div class="flickr-widget">
-				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=72179079@N00"></script>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-
-		<!-- Twitter -->
-		<div class="four columns">
-			<h4>Twitter</h4>
-			<ul id="twitter"></ul>
-				<script type="text/javascript">
-					jQuery(document).ready(function($){
-					$.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=Vasterad&count=1'), function(tweets){
-						$("#twitter").html(tz_format_twitter(tweets));
-					}); });
-				</script>
-			<div class="clearfix"></div>
-		</div>
 
 	</div>
 	<!-- 960 Container / End -->
@@ -172,7 +152,7 @@
 		<!-- Copyrights -->
 		<div class="eight columns">
 			<div class="copyright">
-				© Copyright 2013 by <a href="#">Nevia</a>. All Rights Reserved.
+				© Copyright 2013 by <a href="/index">Nevia</a>. All Rights Reserved.
 			</div>
 		</div>
 
@@ -180,9 +160,8 @@
 		<div class="eight columns">
 			<nav id="sub-menu">
 				<ul>
-					<li><a href="#">FAQ's</a></li>
-					<li><a href="#">Sitemap</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="/index">Inicio</a></li>
+					<li><a href="/contact">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>

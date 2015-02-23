@@ -16,7 +16,7 @@
 
 
 <!-- 960 Container -->
-<div class="container" style="margin: 20px 20px;">
+<div class="container" style="margin: 20px 39px;">
         <h1><a href="projects" class="titleLink">Proyectos de instalaciones</a></h1>
 </div>
 <!-- 960 Container -->
@@ -45,7 +45,7 @@
 <div class="line" style="margin: 40px 0;"></div><!-- ====================================================================== -->
 
 <!-- 960 Container -->
-<div class="container" style="margin: 20px 20px;">
+<div class="container" style="margin: 20px 39px;">
         <h1><a href="licenses" class="titleLink">Licencias</a></h1>
 </div>
 <!-- 960 Container -->
@@ -67,7 +67,7 @@
 
 <div class="line" style="margin: 40px 0;"></div><!-- ====================================================================== -->
 
-<div class="container" style="margin: 20px 20px;">
+<div class="container" style="margin: 20px 39px;">
         <h1><a href="energy" class="titleLink">Energía</a></h1>
 </div>
 <!-- 960 Container -->
@@ -95,7 +95,7 @@
 
 <div class="line" style="margin: 40px 0;"></div><!-- ====================================================================== -->
 
-<div class="container" style="margin: 20px 20px;">
+<div class="container" style="margin: 20px 39px;">
         <h1><a href="environmental" class="titleLink">Ingeniería ambiental</a></h1>
 </div>
 <!-- 960 Container -->
@@ -124,7 +124,7 @@
 
 <div class="line" style="margin: 40px 0;"></div><!-- ====================================================================== -->
 
-<div class="container" style="margin: 20px 20px;">
+<div class="container" style="margin: 20px 39px;">
         <h1><a href="civil" class="titleLink">Ingeniería civil</a></h1>
 </div>
 <!-- 960 Container -->
@@ -153,7 +153,7 @@
 
 <div class="line" style="margin: 40px 0;"></div><!-- ====================================================================== -->
 
-<div class="container" style="margin: 20px 20px;">
+<div class="container" style="margin: 20px 39px;">
         <h1><a href="expert" class="titleLink">Periciales</a></h1>
 </div>
 <!-- 960 Container -->

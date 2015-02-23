@@ -21,7 +21,6 @@ class ContactController extends BaseController
               $message->to($toEmail, $toName);
       
               $message->subject($subject);
-
           });
 
      }
