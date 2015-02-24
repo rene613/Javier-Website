@@ -22,7 +22,10 @@ Route::get('/about', function(){		return View::make('about')->with('page', 'abou
 //Route::get('/contact', function(){		return View::make('contact')->with('page', 'contact');});
 Route::get('extra', 'extraController@getForm');
 Route::get('/services', function(){		return View::make('services')->with('page', 'services');});
-Route::get('/projects', function(){		return View::make('projects')->with('page', 'projects');});
+Route::get('/projects', function(){		return View::make('projects')
+	->with('page', 'projects')
+	->with('count', 0);
+});
 Route::get('/licenses', function(){		return View::make('licenses')->with('page', 'licenses');});
 Route::get('/energy', function(){		return View::make('energy')->with('page', 'energy');});
 Route::get('/environmental', function(){	return View::make('environmental')->with('page', 'environmental');});
