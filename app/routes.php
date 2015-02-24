@@ -27,14 +27,10 @@ Route::post('contact', 'ContactController@postForm');
 
 // All service pages
 Route::get('/{service}', function($service){
-	$services = array('projects' => 'projects', 'energy' => 'energy', 'licenses' => 'licenses', 'environmental' => 'environmental', 'civil' => 'civil', 'expert' => 'expert');		
-	if (isset($services[$service])) {
+	if ($service == 'projects' || 'licenses' || 'energy' || 'environmental' || 'civil' || 'expert') {
 		return View::make('subServices')
 		->with('page', $service)
 		// count is for alternating div styles in a loop.
 		->with('count', 0);
-	} else {
-		return View::make('index')
-		->with('page', 'extra');
 	}
 });
