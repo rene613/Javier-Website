@@ -5,14 +5,14 @@ class extraUtils {
 	public static function getServices($category)
 	{
 		$services = array (
-			"project" => array (
+			"projects" => array (
 				"1" => array ( "id" => "project1", "title" => "instalaciones eléctricas en BT", 									"price" => "this stuff costs 100 monneh", 																		"text" => "This is text for Proyectos 111"),
 				"2" => array ( "id" => "project2", "title" => "Centros de Transformación", 											"price" => "this stuff costs 100 monneh", 																		"text" => "This is text for Proyectos 222"),
 				"3" => array ( "id" => "project3", "title" => "Instalaciones de alumbrado interiores y exteriores", 				"price" => "this stuff costs 100 monneh", 																		"text" => "This is text for Proyectos 333"),
 				"4" => array ( "id" => "project4", "title" => "Instalaciones de climatización, ACS, fontanería, saneamiento, etc", 	"price" => "This price is not preset, please ask <a href='contact'>here</a>. <br />Response may take a while.", "text" => "This is text for Proyectos 444")
 			),
 		
-			"license" => array (
+			"licenses" => array (
 				"1" => array ( "id" => "license1", "title" => "AAI - Autorizaciones ambientales integradas", 	"price" => "this stuff costs 100 monneh", "text" => "This is text for Licencias 111"),
 				"2" => array ( "id" => "license2", "title" => "LA - Licencias de actividad", 					"price" => "this stuff costs 100 monneh", "text" => "This is text for Licencias 222"),
 				"3" => array ( "id" => "license3", "title" => "DR - Declaración responsable ambiental", 		"price" => "this stuff costs 100 monneh", "text" => "This is text for Licencias 111"),

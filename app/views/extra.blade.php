@@ -40,8 +40,8 @@
 							<select name="services" id="services" style="border: 3px solid #B2B2B2">
 
 								<option value="0">--- Select a service ---</option>
-								<option value="project">Proyectos de instalaciones</option>
-								<option value="license">Licencias de actividad</option>
+								<option value="projects">Proyectos de instalaciones</option>
+								<option value="licenses">Licencias de actividad</option>
 								<option value="energy">Energía</option>
 								<option value="environmental">Ingeniería ambiental</option>
 								<option value="civil">Ingeniería civil</option>

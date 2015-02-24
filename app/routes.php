@@ -29,7 +29,7 @@ Route::post('contact', 'ContactController@postForm');
 Route::get('/{service}', function($service){
 	$services = array('projects' => 'projects', 'energy' => 'energy', 'licenses' => 'licenses', 'environmental' => 'environmental', 'civil' => 'civil', 'expert' => 'expert');		
 	if (isset($services[$service])) {
-		return View::make($service)
+		return View::make('subServices')
 		->with('page', $service)
 		// count is for alternating div styles in a loop.
 		->with('count', 0);
