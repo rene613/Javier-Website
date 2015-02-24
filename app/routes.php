@@ -22,15 +22,19 @@ Route::get('/about', function(){		return View::make('about')->with('page', 'abou
 //Route::get('/contact', function(){		return View::make('contact')->with('page', 'contact');});
 Route::get('extra', 'extraController@getForm');
 Route::get('/services', function(){		return View::make('services')->with('page', 'services');});
-Route::get('/projects', function(){		return View::make('projects')
-	->with('page', 'projects')
-	->with('count', 0);
-});
-Route::get('/licenses', function(){		return View::make('licenses')->with('page', 'licenses');});
-Route::get('/energy', function(){		return View::make('energy')->with('page', 'energy');});
-Route::get('/environmental', function(){	return View::make('environmental')->with('page', 'environmental');});
-Route::get('/civil', function(){		return View::make('civil')->with('page', 'civil');});
-Route::get('/expert', function(){		return View::make('expert')->with('page', 'expert');});
 Route::get('contact', 'ContactController@getForm');
 Route::post('contact', 'ContactController@postForm');
 
+// All service pages
+Route::get('/{service}', function($service){
+	$services = array('projects' => 'projects', 'energy' => 'energy', 'licenses' => 'licenses', 'environmental' => 'environmental', 'civil' => 'civil', 'expert' => 'expert');		
+	if (isset($services[$service])) {
+		return View::make($service)
+		->with('page', $service)
+		// count is for alternating div styles in a loop.
+		->with('count', 0);
+	} else {
+		return View::make('index')
+		->with('page', 'extra');
+	}
+});
