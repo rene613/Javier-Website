@@ -22,7 +22,7 @@
 	@endif
 	">
 		<div class="container" style="margin: 20px 9px;">
-		        <h1><a href="projects" class="titleLink">{{$service['title']}}</a></h1>
+		        <h2><a href="projects" class="titleLink">{{$service['title']}}</a></h2>
 		</div>
 
 		<!-- 960 Container -->

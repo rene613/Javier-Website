@@ -103,7 +103,7 @@
 		</ul>
 		<!-- Second Level / End -->
 	</li>
-	<li><a href="extra" {{baseUtils::pageCheck($page, 'extra')}} ><i class="halflings white envelope"></i> extra</a></li>
+	<li><a href="extra" {{baseUtils::pageCheck($page, 'extra')}} ><i class="halflings white envelope"></i> Presupuesto</a></li>
 	<li><a href="contact" {{baseUtils::pageCheck($page, 'contact')}} ><i class="halflings white envelope"></i> Contacto</a></li>
 
 </ul>
