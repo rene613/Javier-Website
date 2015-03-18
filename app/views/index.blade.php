@@ -7,7 +7,7 @@
 
 <div id="content">
 <!-- LayerSlider  -->
-<section id="layerslider-container">
+
 	<div id="layerslider" style="width: 1020px; height: 450px; margin: 0 auto;">
 
 		<!-- Slide 1 -->
@@ -89,7 +89,7 @@
 			<article class="icon-box">
 				<i class="icon-user"></i>
 				<h3>Responsabilidad</h3>
-				<p>motivación y productividad a la hora de enfrentarse y realizar los trabajos.</p>
+				<p>Motivación, productividad y responsabilidad a la hora de enfrentarse y realizar los trabajos</p>
 			</article>
 		</div>
 		<!-- Icon Box End -->

@@ -1,8 +1,6 @@
 @extends('base')
 @section('css')
 @stop
-@section('javascript')
-@stop
 @section('content')
 <div id="content">
 
@@ -81,10 +79,9 @@
 			<section class="google-map-container">
 
 				<div id="googlemaps" class="google-map google-map-full" style="padding-bottom:40%"></div>
-
+				@section('javascript')
 				<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-				<script src="scripts/jquery.gmap.min.js"></script>
-
+				{{ HTML::script("scripts/jquery.gmap.min.js") }}
 				<script type="text/javascript">
 				jQuery('#googlemaps').gMap({
 					maptype: 'ROADMAP',
@@ -92,13 +89,15 @@
 					zoom: 16,
 					markers: [
 						{
-							address: 'New York', // Your Adress Here
+							address: 'castellon de la plana Carrer de Sant Vicent, 4', // Your Adress Here
 							html: '',
 							popup: false,
 						}
 					],
 				});
 				</script>
+				@stop
+				
 			</section>
 			<!-- Google Maps / End -->
 
