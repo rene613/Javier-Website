@@ -14,19 +14,13 @@
 	</div>
 </div>
 @foreach (extraUtils::getServices($page) as $service )
-	<div class="
-	@if ( ++$count % 2 == 0 )
-		blank floated
-	@else
-		container
-	@endif
-	">
-		<div class="container" style="margin: 20px 9px;">
+	<div class="container">
+		<div class="container" style="margin: 15px 9px;">
 		        <h2><a href="projects" class="titleLink">{{$service['title']}}</a></h2>
 		</div>
 
 		<!-- 960 Container -->
-		<div class="container"style="margin-bottom: 30px;">
+		<div class="container"style="margin-bottom: 50px;">
 		        <div class="twelve columns">
 				{{$service['text']}}
 		        </div>

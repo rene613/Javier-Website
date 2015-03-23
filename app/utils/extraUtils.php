@@ -20,7 +20,7 @@ class extraUtils {
 			),
 
 			"energy" => array (
-				"1" => array ( "id" => "energy1", "title" => "Auditorias energéticas", 										"price" => "this stuff costs 100 monneh", "text" => "Realización de auditorías energéticas de edificios residenciales o terciarios. "),
+				"1" => array ( "id" => "energy1", "title" => "Auditorias energéticas", 										"price" => "this stuff costs 100 monneh", "text" => "Realización de auditorías energéticas de edificios residenciales o terciarios."),
 				"2" => array ( "id" => "energy2", "title" => "Certificados energéticos de edificios de nueva construcción", "price" => "this stuff costs 100 monneh", "text" => "Realización de cálculos justificativos para el cumplimiento de la normativa mediante el software reconocido. (Lider, Lider-Calener, Calener Vyp y Calener GT)."),
 				"3" => array ( "id" => "energy3", "title" => "Certificados energéticos de edificios existentes", 			"price" => "this stuff costs 100 monneh", "text" => "Realización de cálculos justificativos para el cumplimiento de la normativa mediante el software reconocido. (CE3X).")
 			),
@@ -31,7 +31,7 @@ class extraUtils {
 				"4" => array ( "id" => "environmental4", "title" => "Estudio de integración paisajística", 		"price" => "this stuff costs 100 monneh", "text" => "This is text for Ingeniería ambiental 222")
 			),
 			"civil" => array (
-				"1" => array ( "id" => "civil1", "title" => "Proyectos de urbanización", 	"price" => "this stuff costs 100 monneh", "text" => "Realización y tramitación de proyectos de urbanización. "),
+				"1" => array ( "id" => "civil1", "title" => "Proyectos de urbanización", 	"price" => "this stuff costs 100 monneh", "text" => "Realización y tramitación de proyectos de urbanización."),
 				"2" => array ( "id" => "civil2", "title" => "Proyectos de pequeñas EDARs", 	"price" => "this stuff costs 100 monneh", "text" => "Diseño y redacción de proyectos de pequeñas depuradoras de agua potable.")
 			),
 			"expert" => array (

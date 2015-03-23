@@ -1,16 +1,17 @@
-<form method="post" action="/contact" name="contactform" id="contactform">
+<title>admin</title>
+<form method="post" action="/admin" name="adminform" id="adminform">
 
 	<fieldset>
 
 		Add a service<br>
 		<div>
-			<label>Service Name:</label>
+			<label>Service Name:</label><br>
 			<input name="name" type="text" id="name" />
 		</div>
 
 		<div>
-			<label>Service Text: </label>
-			<input name="serviceText" type="text" id="serviceText" />
+			<label>Service Text: </label><br>
+			<textarea name="subText" type="textarea" id="subText" style="height:200px; width:400px;" /></textarea>
 		</div>
 
 	</fieldset>
@@ -23,36 +24,35 @@
 
 		Add a subservice<br>
 		<div>
-			<label>Service</label>
+			<label>Service</label><br>
 				<select name="services" id="services">
 				<option value="0">--- Select a service ---</option>
-				<option value="projects">Proyectos de instalaciones</option>
-				<option value="licenses">Licencias de actividad</option>
-				<option value="energy">Energía</option>
-				<option value="environmental">Ingeniería ambiental</option>
-				<option value="civil">Ingeniería civil</option>
-				<option value="expert">Periciales</option>
+				@foreach ($services as $service)	
+						<option value={{$service->service_id}}>{{$service->service_name}}</option>
+				@endforeach
+				</select>
 			</select>
 		</div>
 
 		<div>
-			<label>Subservice name: </label>
+			<label>Subservice name: </label><br>
 			<input name="subName" type="text" id="subName" />
 		</div>
 
 		<div>
-			<label>Subservice Text: </label>
-			<input name="subText" type="text" id="subText" />
-		</div>
-
-		<div>
-			<label>Price: </label>
+			<label>Price: </label><br>
 			<input name="price" type="text" id="price" />
 		</div>
 
 		<div>
-			<label>id: </label>
+			<label>id: </label><br>
 			<input name="id" type="text" id="id" />
+		</div>
+
+		<div>
+			<label>Subservice Text: </label><br>
+			<textarea name="subText" type="textarea" id="subText" style="height:200px; width:400px;" /></textarea>
+
 		</div>
 
 

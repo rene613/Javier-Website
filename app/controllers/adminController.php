@@ -1,8 +1,11 @@
 <?php
 class AdminController extends BaseController
 {
-     public function getForm() {
-          return View::make('admin');
+    public function getForm() {
+
+          return View::make('admin')
+          ->with('services', DB::select('select * from services'));
+          
      }
     
      public function postForm() {

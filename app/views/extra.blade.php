@@ -40,22 +40,22 @@
 							<select name="services" id="services" style="border: 3px solid #B2B2B2">
 
 								<option value="0">--- Select a service ---</option>
-								<option value="projects">Proyectos de instalaciones</option>
-								<option value="licenses">Licencias de actividad</option>
-								<option value="energy">Energía</option>
-								<option value="environmental">Ingeniería ambiental</option>
-								<option value="civil">Ingeniería civil</option>
-								<option value="expert">Periciales</option>
+								@foreach ($services as $service)
+									<option value={{$service->service_id}}>{{$service->service_name}}</option>
+								@endforeach
 							</select>
 
 						</fieldset>
 						<fieldset class="one-third column">
 
 						@foreach ($services as $service)
-							<select name={{$service}} id={{$service}} style="display: none; border: 3px solid #B2B2B2;">
+							<?php $id = $service->service_id; ?>
+							<select name={{$id}} id={{$id}} style="display: none; border: 3px solid #B2B2B2;">
 								<option value="0">--- Select a service ---</option>
-								@foreach (extraUtils::getServices($service) as $service )
-									<option value={{$service['id']}}>{{$service['title']}}</option>
+
+								<?php $subservices = DB::select("select * from subservices where service_name = '$id' ORDER BY sub_id"); ?>
+								@foreach ($subservices as $subservice)
+									<option value={{$subservice->sub_id}}>{{$subservice->sub_name}}</option>
 								@endforeach
 							</select>
 						@endforeach
@@ -77,25 +77,39 @@
 	<!-- Extras -->
 
 	@foreach ($services as $service)
-		@foreach (extraUtils::getServices($service) as $service )
+		<?php $subservices = DB::select("select * from subservices where service_name = '$service->service_id' ORDER BY sub_id"); ?>
+		@foreach ($subservices as $subservice)
+		<?php
+			$id = $subservice->sub_id;
+			$name = $subservice->sub_name;
+			$text = $subservice->sub_text;
+			$price = $subservice->price;
+		?>
 		<!--start service-->
-			<div id={{$service['id']}} style="display: none;">
+			<div id={{$id}} style="display: none;">
 				<div class="ten columns">
 					<!-- Headline --><br />
-					<h3 class="margin-reset">{{$service['title']}}</h3><br />
+					<h3 class="margin-reset">{{$name}}</h3><br />
 
 					<div>
-						{{$service['text']}}
+						{{$text}}
 						
 					</div>
 				</div>	
 
+				<!-- space -->
+				<div class="three columns" style="visibility: hidden;">.</div>
 
-				<div class="six columns">
+				<div class="three columns">
 					<!-- Headline --><br />
 					<h3 class="margin-reset">Price</h3><br />
 					<div>
-						{{$service['price']}}<br />
+						@if ($price == null)
+							No price available.
+							<a href="contact" class="button color launch">Contact us</a>	
+						@else 
+							{{$price}}
+						@endif<br />
 					</div>
 				</div>
 			</div>
