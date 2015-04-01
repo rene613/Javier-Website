@@ -4,6 +4,7 @@ class AdminController extends BaseController
     public function getForm() {
 
           return View::make('admin')
+          ->with('page', 'contact')
           ->with('services', DB::select('select * from services'));
           
      }

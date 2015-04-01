@@ -28,7 +28,9 @@ Route::get('/services', function(){		return View::make('services')
 	
 Route::get('contact', 'ContactController@getForm');
 Route::post('contact', 'ContactController@postForm');
-Route::get('/admin', 'AdminController@getForm');
+Route::get('admin', 'AdminController@getForm');
+Route::post('create', 'AdminController@getForm');
+Route::post('update', 'AdminController@getForm');
 
 // All service pages
 Route::get('/{service}', function($service){

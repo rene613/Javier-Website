@@ -1,10 +1,13 @@
 var prev; // Holds the current selected value at focus, and when chanced can set the previous id to display none!
 var prevSub; // same as above, but the selected value of it.
 var value; 
+
+//keeping previous selections to remove the previous text
 $("#services").focus(function(){
         prev = $(this).find(":selected").val();
         prevSub = $("#"+prev).find(":selected").val();
 
+//adding current service removing old service AND subservice if one was selected.
 }).change(function(){
                 value = $(this).find(":selected").val();
                 $("#"+prev).css("display", "none");
@@ -19,6 +22,8 @@ $("#services").focus(function(){
                         $("#services").css("borderColor", "#B2B2B2")
                 }
 });
+
+//adding current subservice removing old subservice
 $("#services").change(function(){
         var selectedValue = $(this).find(":selected").val();
         var select = document.getElementById(selectedValue);

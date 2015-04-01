@@ -38,8 +38,6 @@
 						<fieldset class="one-third column">
 
 							<select name="services" id="services" style="border: 3px solid #B2B2B2">
-
-								<option value="0">--- Select a service ---</option>
 								@foreach ($services as $service)
 									<option value={{$service->service_id}}>{{$service->service_name}}</option>
 								@endforeach
