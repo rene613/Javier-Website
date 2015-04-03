@@ -15,6 +15,18 @@ Route::get('/hello', function()
 {
 	return View::make('hello');
 });
+Route::get('/indexdata', function()
+{
+	$services = Service::all();
+	return View::make('indexdata')->with('services', $services);
+});
+
+Route::get('/subservice', function(){
+
+	$service_id = Input::get('service_id');
+	$subServices = subservice::where('service_id', '=', $service_id)->get();
+	return Response::json($subServices);
+});
 
 // ->with gives the page the variable $page and value about/index/conact etc.
 Route::get('/index', function(){		return View::make('index')->with('page', 'index');});
