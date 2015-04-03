@@ -50,7 +50,7 @@
 					$('#subservice').empty();
 					$.each(data, function(index, subserviceObj){
 
-						$('#subservice').append('<option value="'+subjserviceObj.id+'">'+subserviceObj.sub_name+'</option>');
+						$('#subservice').append('<option value="'+subserviceObj.id+'">'+subserviceObj.sub_name+'</option>');
 
 					});
 				});

@@ -21,7 +21,7 @@ Route::get('/indexdata', function()
 	return View::make('indexdata')->with('services', $services);
 });
 
-Route::get('/subservice', function(){
+Route::get('/ajax-subservice', function(){
 
 	$service_id = Input::get('service_id');
 	$subServices = subservice::where('service_id', '=', $service_id)->get();
