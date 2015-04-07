@@ -93,12 +93,12 @@
 	<li><a href="services" 	{{baseUtils::pageCheck($page, 'services')}} 	><i class="halflings white cog"></i> Servicios</a>
 		<!-- Second Level / Start -->
 		<ul class="cols2">
-			<li><a href="projects" 		{{baseUtils::pageCheck($page, 'projects')}} 	>Proyectos de instalaciones</a></li>
-			<li><a href="licenses" 		{{baseUtils::pageCheck($page, 'licenses')}} 	>Licencias de actividad</a></li>
-			<li><a href="energy" 		{{baseUtils::pageCheck($page, 'energy')}}	>Energía</a></li>
-			<li><a href="environmental" {{baseUtils::pageCheck($page, 'environmental')}}	>Ingeniería ambiental</a></li>
-			<li><a href="civil" 		{{baseUtils::pageCheck($page, 'civil')}}	>Ingeniería civil</a></li>
-			<li><a href="expert"		{{baseUtils::pageCheck($page, 'expert')}}	>Periciales</a></li>
+			<li><a href="service1" 		{{baseUtils::pageCheck($page, 'service1')}} 	>Proyectos de instalaciones</a></li>
+			<li><a href="service2" 		{{baseUtils::pageCheck($page, 'service2')}} 	>Licencias de actividad</a></li>
+			<li><a href="service3" 		{{baseUtils::pageCheck($page, 'service3')}}		>Energía</a></li>
+			<li><a href="service4" 		{{baseUtils::pageCheck($page, 'service4')}}		>Ingeniería ambiental</a></li>
+			<li><a href="service5" 		{{baseUtils::pageCheck($page, 'service5')}}		>Ingeniería civil</a></li>
+			<li><a href="service6"		{{baseUtils::pageCheck($page, 'service6')}}		>Periciales</a></li>
 			
 		</ul>
 		<!-- Second Level / End -->

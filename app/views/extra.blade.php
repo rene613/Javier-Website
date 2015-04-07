@@ -39,7 +39,7 @@
 
 							<select name="services" id="services" style="border: 3px solid #B2B2B2">
 								@foreach ($services as $service)
-									<option value={{$service->service_id}}>{{$service->service_name}}</option>
+									<option value={{"service".$service->service_id}}>{{$service->service_name}}</option>
 								@endforeach
 							</select>
 
@@ -48,10 +48,10 @@
 
 						@foreach ($services as $service)
 							<?php $id = $service->service_id; ?>
-							<select name={{$id}} id={{$id}} style="display: none; border: 3px solid #B2B2B2;">
+							<select name={{"service".$id}} id={{"service".$id}} style="display: none; border: 3px solid #B2B2B2;">
 								<option value="0">--- Select a service ---</option>
 
-								<?php $subservices = DB::select("select * from subservices where service_name = '$id' ORDER BY sub_id"); ?>
+								<?php $subservices = DB::select("select * from subservices where service_id = '$id' ORDER BY sub_id"); ?>
 								@foreach ($subservices as $subservice)
 									<option value={{$subservice->sub_id}}>{{$subservice->sub_name}}</option>
 								@endforeach
@@ -75,7 +75,7 @@
 	<!-- Extras -->
 
 	@foreach ($services as $service)
-		<?php $subservices = DB::select("select * from subservices where service_name = '$service->service_id' ORDER BY sub_id"); ?>
+		<?php $subservices = DB::select("select * from subservices where service_id = '$service->service_id' ORDER BY sub_id"); ?>
 		@foreach ($subservices as $subservice)
 		<?php
 			$id = $subservice->sub_id;

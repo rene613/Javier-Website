@@ -22,7 +22,7 @@
 	?>
 <!-- 960 Container -->
 <div class="container" style="margin: 20px 39px;">
-        <h1><a href={{$id}} class="titleLink">{{$name}}</a></h1>
+        <h1><a href={{"service".$id}} class="titleLink">{{$name}}</a></h1>
 </div>
 <!-- 960 Container -->
 <div class="container">
@@ -35,7 +35,7 @@
 				<ul class="project-info">
 				<li><strong>Client:</strong> Google</li>
 				<li><strong>Date:</strong> December 2012</li>
-				<li><a href="projects" class="button color launch"> View Project</a></li>
+				<li><a href="service{{$id}}" class="button color launch"> View Project</a></li>
 			</ul>
 		</div>
 	</div>

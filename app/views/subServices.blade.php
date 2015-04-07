@@ -13,16 +13,16 @@
                 <img src="img/J3.jpg" alt="" />
 	</div>
 </div>
-@foreach (extraUtils::getServices($page) as $service )
+@foreach($subServices as $subService)
 	<div class="container">
 		<div class="container" style="margin: 15px 9px;">
-		        <h2><a href="projects" class="titleLink">{{$service['title']}}</a></h2>
+		        <h2><a href="projects" class="titleLink">{{$subService->sub_name}}</a></h2>
 		</div>
 
 		<!-- 960 Container -->
 		<div class="container"style="margin-bottom: 50px;">
 		        <div class="twelve columns">
-				{{$service['text']}}
+				{{$subService->sub_text}}
 		        </div>
 		</div>
 	</div>

@@ -94,7 +94,8 @@
 </div>
 
 <!-- -------------------- SUB CREATE ------------------------- -->
-<div id="createSubForm" style="display:none;">
+<div id="createSu
+bForm" style="display:none;">
 	<form method="post" action="/admin" name="contactform" id="contactform">
 
 		<fieldset>
@@ -234,7 +235,7 @@
 
 <!-- -------------------- DELETE ------------------------- -->
 <div id="deleteForm" style="display:none;">
-	<form method="post" action="/update" name="contactform" id="contactform">
+	<form method="post" action="/deleteService" name="contactform" id="contactform">
 
 		<fieldset>
 
@@ -262,7 +263,7 @@
 
 <!-- -------------------- SUB DELETE ------------------------- -->
 <div id="deleteSubForm" style="display:none;">
-	<form method="post" action="/update" name="contactform" id="contactform">
+	<form method="post" action="/deleteSubservice" name="contactform" id="contactform">
 
 		<fieldset>
 

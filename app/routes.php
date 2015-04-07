@@ -21,11 +21,23 @@ Route::get('/indexdata', function()
 	return View::make('indexdata')->with('services', $services);
 });
 
-Route::get('/ajax-subservice', function(){
+Route::get('/ajax-subservices', function(){
 
 	$service_id = Input::get('service_id');
 	$subServices = subservice::where('service_id', '=', $service_id)->get();
 	return Response::json($subServices);
+});
+Route::get('/ajax-service', function(){
+
+	$service_id = Input::get('service_id');
+	$service = service::where('service_id', '=', $service_id)->get();
+	return Response::json($service);
+});
+Route::get('/ajax-2subservice', function(){
+
+	$sub_id = Input::get('sub_id');
+	$subService = subservice::where('sub_id', '=', $sub_id)->get();
+	return Response::json($subService);
 });
 
 // ->with gives the page the variable $page and value about/index/conact etc.
@@ -45,9 +57,17 @@ Route::post('create', 'AdminController@getForm');
 Route::post('update', 'AdminController@getForm');
 
 // All service pages
-Route::get('/{service}', function($service){
-	if ($service == 'projects' || 'licenses' || 'energy' || 'environmental' || 'civil' || 'expert') {
-		return View::make('subServices')
-		->with('page', $service);
+Route::get('/service{service}', function($service){
+	$dbServices = DB::select('select * from services');
+	foreach ($dbServices as $dbService) {
+		if ($service == $dbService->service_id) {
+			$dbSubservices = DB::select("select * from subservices where service_id = '$service' ORDER BY sub_id");
+				
+			return View::make('subServices')
+				->with('subServices', $dbSubservices)
+				->with('page', 'service'.$service);
+
+		}
 	}
+
 });
