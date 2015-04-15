@@ -38,6 +38,7 @@
 						<fieldset class="one-third column">
 
 							<select name="services" id="services" style="border: 3px solid #B2B2B2">
+							<option disabled selected style="display:none;" value="0"> ---Select a service--- </option>
 								@foreach ($services as $service)
 									<option value={{"service".$service->service_id}}>{{$service->service_name}}</option>
 								@endforeach
@@ -49,7 +50,7 @@
 						@foreach ($services as $service)
 							<?php $id = $service->service_id; ?>
 							<select name={{"service".$id}} id={{"service".$id}} style="display: none; border: 3px solid #B2B2B2;">
-								<option value="0">--- Select a service ---</option>
+								<option disabled selected style="display:none;" value="0">---Select a subservice---</option>
 
 								<?php $subservices = DB::select("select * from subservices where service_id = '$id' ORDER BY sub_id"); ?>
 								@foreach ($subservices as $subservice)
@@ -75,13 +76,13 @@
 	<!-- Extras -->
 
 	@foreach ($services as $service)
-		<?php $subservices = DB::select("select * from subservices where service_id = '$service->service_id' ORDER BY sub_id"); ?>
-		@foreach ($subservices as $subservice)
-		<?php
-			$id = $subservice->sub_id;
-			$name = $subservice->sub_name;
-			$text = $subservice->sub_text;
-			$price = $subservice->price;
+			<?php $subservices = DB::select("select * from subservices where service_id = '$service->service_id' ORDER BY sub_id"); ?>
+			@foreach ($subservices as $subservice)
+			<?php
+				$id = $subservice->sub_id;
+				$name = $subservice->sub_name;
+				$text = $subservice->sub_text;
+				$price = $subservice->price;
 		?>
 		<!--start service-->
 			<div id={{$id}} style="display: none;">
@@ -102,7 +103,7 @@
 					<!-- Headline --><br />
 					<h3 class="margin-reset">Price</h3><br />
 					<div>
-						@if ($price == null)
+						@if ($price == "0.00")
 							No price available.
 							<a href="contact" class="button color launch">Contact us</a>	
 						@else 

@@ -1,0 +1,12 @@
+
+textarea.form-control {
+	height:200px; 
+	width:100%;
+}
+
+span.input-group-addon {
+	background-color:#4CB770; 
+	color:#eee; 
+	width:160px; 
+	text-align:left;
+}

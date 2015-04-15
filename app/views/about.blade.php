@@ -65,13 +65,11 @@
 
 	<div class="six columns">
 		<!-- Headline --><br />
-		<h3 class="margin-reset">Our Skills</h3><br />
+		<h3 class="margin-reset">Clientes</h3><br />
 		<div id="skill-bars">
-			<div class="skill-bar"><div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">Web Design</span></div>
-			<div class="skill-bar"><div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">HTML / CSS</span></div>
-			<div class="skill-bar"><div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">WordPress</span></div>
-			<div class="skill-bar"><div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">jQuery</span></div>
-			<div class="skill-bar"><div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">SEO</span></div>
+			<div style="cursor:pointer; cursor:hand;" class="skill-bar" onclick="location.href='http://planifica.org';" >			<div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">PLANIFICA URBANISMO Y GESTIÓN</span></div>
+			<div style="cursor:pointer; cursor:hand;" class="skill-bar" onclick="location.href='http://inmobiliariacarmona.es';" >	<div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">CARMONA 1952</span></div>
+			<div style="cursor:pointer; cursor:hand;" class="skill-bar" onclick="location.href='http://sigogestion.com';" >			<div class="skill-bar-content" data-percentage="100"></div><span class="skill-title">SiGO</span></div>
 		</div>
 
 	</div>

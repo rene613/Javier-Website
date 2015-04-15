@@ -9,24 +9,61 @@ class AdminController extends BaseController
           
      }
     
-     public function postForm() {
+     public function create() {
          
-          $fromEmail = Input::get('email');
-          $fromName = Input::get('name');
-          $subject = Input::get('subject');
-          $comment = Input::get('comment');
-      
-          $toEmail = 'rene.steneker@hotmail.com';
-          $toName = 'Company Manager';
-          
-          $data = array('fromEmail' => $fromEmail, 'fromName' => $fromName, 'subject' => $subject, 'comment' => $comment, 'toEmail' => $toEmail, 'toName' => $toName);
-          Mail::send('emails.contact', $data, function($message) use ($toEmail, $toName, $subject)
-          {
-              $message->to($toEmail, $toName);
-      
-              $message->subject($subject);
-          });
+        $service = new service;
+        $service->service_name = Input::get('service_name');
+        $service->service_text = Input::get('service_text');
+        $service->save();
 
      }
+
+     public function createSub() {
+         
+        $subservice = new subservice;
+        $subservice->service_id = Input::get('services');
+        $subservice->sub_name = Input::get('sub_name');
+        $subservice->sub_text = Input::get('sub_text');
+        $subservice->price = Input::get('price');
+        $subservice->save();
+
+     }
+
+     public function update() {
+         
+        $service = service::where('service_id', '=', Input::get('services'))->first();
+        $service->service_text = Input::get('service_text');
+        $service->save();
+
+     }
+
+     public function updateSub() {
+         
+        $subservice = subservice::where('sub_id', '=', Input::get('subservices'))->first();
+        $subservice->sub_text = Input::get('sub_text');
+        $subservice->price = Input::get('price');
+        $subservice->save();
+
+     }
+
+     public function delete() {
+         
+        $service = service::where('service_id', '=', Input::get('services'))->first();
+        $service->delete();
+
+     }
+
+     public function deleteSub() {
+         
+        $service = new service;
+
+        $service->service_name = Input::get('service_name');
+
+        $service->service_text = Input::get('service_text');
+
+        $service->save();
+
+     }
+
 }
 ?>

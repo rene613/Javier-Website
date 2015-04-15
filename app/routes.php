@@ -21,25 +21,6 @@ Route::get('/indexdata', function()
 	return View::make('indexdata')->with('services', $services);
 });
 
-Route::get('/ajax-subservices', function(){
-
-	$service_id = Input::get('service_id');
-	$subServices = subservice::where('service_id', '=', $service_id)->get();
-	return Response::json($subServices);
-});
-Route::get('/ajax-service', function(){
-
-	$service_id = Input::get('service_id');
-	$service = service::where('service_id', '=', $service_id)->get();
-	return Response::json($service);
-});
-Route::get('/ajax-2subservice', function(){
-
-	$sub_id = Input::get('sub_id');
-	$subService = subservice::where('sub_id', '=', $sub_id)->get();
-	return Response::json($subService);
-});
-
 // ->with gives the page the variable $page and value about/index/conact etc.
 Route::get('/index', function(){		return View::make('index')->with('page', 'index');});
 Route::get('/about', function(){		return View::make('about')->with('page', 'about');});
@@ -70,4 +51,44 @@ Route::get('/service{service}', function($service){
 		}
 	}
 
+});
+// CRUD
+
+Route::post('/create', 		'AdminController@create');
+Route::post('/createSub', 	'AdminController@createSub');
+Route::post('/update', 		'AdminController@update');
+Route::post('/updateSub', 	'AdminController@updateSub');
+Route::post('/delete', 		'AdminController@delete');
+Route::post('/deleteSub', 	'AdminController@deleteSub');
+
+
+
+
+
+
+
+// ajax requests!!!
+
+// get all subservices for one service
+Route::get('/ajax-subservices', function(){
+
+	$service_id = Input::get('service_id');
+	$subServices = subservice::where('service_id', '=', $service_id)->get();
+	return Response::json($subServices);
+});
+
+// get service row
+Route::get('/ajax-service', function(){
+
+	$service_id = Input::get('service_id');
+	$service = service::where('service_id', '=', $service_id)->get();
+	return Response::json($service);
+});
+
+//get subservice row
+Route::get('/ajax-subservice', function(){
+
+	$sub_id = Input::get('sub_id');
+	$subService = subservice::where('sub_id', '=', $sub_id)->get();
+	return Response::json($subService);
 });

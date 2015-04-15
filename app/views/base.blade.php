@@ -57,7 +57,7 @@
 			<div class="clearfix"></div>
 
 			<!-- Contact Details -->
-			<div class="contact-details">Contact Phone: +48 880 440 110</div>
+			<div class="contact-details">Teléfono: 635.537.402</div>
 
 			<div class="clearfix"></div>
 
@@ -121,17 +121,16 @@
 		<div class="eleven columns">
 			<div class="four columns">
 				<a href="#"><img src="{{asset('img/logo.jpg')}}" style="width: 210px; height: 70px;" /></a>
-				<p>Morbi gravida imperdiet rutrum fusce mattis, lectus consequat vestibulum, duinibh fermentum ligula.</p>
 			</div>
 		</div>
 
 		<!-- Contact Details -->
 		<div class="four columns">
-			<h4>Contact Details</h4>
+			<h4>Contacto</h4>
 			<ul class="contact-details-alt">
-				<li><i class="halflings white map-marker"></i> <p><strong>Address:</strong> 123 Seward Street, Oklahoma City, USA</p></li>
-				<li><i class="halflings white user"></i> <p><strong>Phone:</strong> +48 880 440 110</p></li>
-				<li><i class="halflings white envelope"></i> <p><strong>Email:</strong> <a href="#">mail@example.com</a></p></li>
+				<li><i class="halflings white map-marker"></i> <p><strong>Dirección:</strong> C/ San Vicente nº4 - 3º, 12002 - Castellón</p></li>
+				<li><i class="halflings white user"></i> <p><strong>Teléfono:</strong> 635.537.402</p></li>
+				<li><i class="halflings white envelope"></i> <p><strong>Email:</strong> <a href="#">jcarmona@iicv.es</a></p></li>
 			</ul>
 		</div>
 
